@@ -34,7 +34,7 @@ async def ask_lecture(
     for chunk in ppt_data:
         combined_summary += chunk.get("summary", "") + "\n"
       
-    prompt_text = "You are an AI Study Guide. Use the following lecture summaries to answer questions concisely and accurately."
+    prompt_text = "You are an AI Study Guide. Use the following lecture summaries to teach me about the subject and generate a quiz with 20 questions : [Insert summaries here]"
 
     input_text = prompt_text.replace("[Insert summaries here]", combined_summary)
     input_text += f"\n\nQuestion: {question}"
