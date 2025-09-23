@@ -1,15 +1,4 @@
 #!/usr/bin/env python3
-"""
-ppt_rag_pipeline.py
-
-Multi-agent style pipeline:
-1. Download PPTs from URLs (optional)
-2. Scan local folder for PPTs
-3. Extract text from slides
-4. Chunk slides and summarize using LLM
-5. Save summaries to JSON
-6. (Optional) Build RAG pipeline with LangChain for Q&A
-"""
 
 import os
 import json
